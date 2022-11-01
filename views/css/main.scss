@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@mixin text($family,$style,$weight,$size,$lineHeight,$color) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+    color: $color;
+}
+@mixin button($widht,$height,$padding,$backColor,$border,$borderRad) {
+    width:$widht ;
+    height: $height;
+    padding: $padding;
+    background-color: $backColor;
+    border: $border;
+    border-radius: $borderRad;   
+}
+
+.reclamaFlex{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .creditoform{
+        max-width: 380px;
+        max-height: 362px;
+        display: flex;
+        flex-direction: column;
+        .advertisement{
+            @include text('Rubik',normal,400,16px,19px,#333333);
+            font-family: 'Rubik', sans-serif;
+            margin-bottom: 9px;
+        }
+        .sizeCredit{
+            @include text('Rubik',normal,600,48px,50px,#333333);
+            margin-bottom: 29px;
+            
+            
+        }
+        .conditions{
+            display: grid;
+            grid-template-columns: 50px 330px;
+            grid-template-rows: 25px 25px 25px;
+            height: 96px;
+            gap: 10px;
+            margin-bottom: 41px;
+                .num{
+                    @include text('Rubik',normal,500,13px,15px,#333333);
+                    background: #FFFFFF;
+                    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.13);
+                    border-radius: 15px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .num1{
+                    grid-area: 1/1/2/2;
+                }
+                .num2{
+                    grid-area: 2/1/3/2;
+                }
+                .num3{
+                    grid-area: 3/1/3/2
+                }
+                .text{
+                    @include text('Rubik',normal,400,19px,23px,#333333);
+                    display: flex;
+                    align-items: center;
+                }
+        }
+        .btnCredit{
+
+            @include text('Rubik',normal,500,16px,19px,#333333);
+            border-radius: 25px;
+            padding: 15px 0px 16px;
+            background: #405554;
+            color: #ffffff;
+        }
+    }
+    .imgBaba{
+        margin-top: 4px;
+    }
+    .stokForm{
+        margin-top: 38px;
+        font-family: 'Rubik', sans-serif;
+        max-height: 230px;
+        max-width: 310px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .promotionalRate{
+            @include text('Rubik',normal,600,35px,130%,#333333);
+            span{
+                @include text('Rubik',normal,500,20px,130%,#333333);
+                border: solid 1px #FFEC91;
+                background-color: #FFEC91;
+                border-radius: 25px;
+                padding: 5px 24px;
+                margin-left: 20px;
+
+            }
+        }
+        .advertisementCredit{
+            @include text('Rubik',normal,400,15px,18px,#333333);
+        }
+        .dataGrid{
+            display: grid;
+            grid-template-columns: 62px 62px 62px 62px;
+            grid-template-rows: 35px 18px;
+            gap: 7px 15px;
+            .data{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @include text('Rubik',normal,500,13px,15px,#333333);
+                border-radius: 25px;
+                background: #FFFFFF;
+            }
+            .word{
+                @include text('Rubik',normal,400,15px,18px,#333333);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        }
+    }
+}

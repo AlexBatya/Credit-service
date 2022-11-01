@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@mixin text($family,$style,$weight,$size,$lineHeight,$color) {
+    font-family: $family;
+    font-style: $style;
+    font-weight: $weight;
+    font-size: $size;
+    line-height: $lineHeight;
+    color: $color;
+}
+@mixin button($widht,$height,$padding,$backColor,$border,$borderRad) {
+    width:$widht ;
+    height: $height;
+    padding: $padding;
+    background-color: $backColor;
+    border: $border;
+    border-radius: $borderRad;   
+}
+
+.container{
+    width: 1200px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+ul{
+    margin-left: 0;
+    padding-left: 0;
+    li{
+        list-style-type: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+header{
+    font-family: 'Rubik', sans-serif;
+    .menuFlex{
+        display: flex; 
+        justify-content: space-between;
+        gap: 10px;
+        padding: 89px 0 76px 0;
+        .credit24{
+            @include text('Rubik',normal,500,17px,20px,#333333);
+            font-family: 'Rubik', sans-serif;
+            display: flex;
+            align-items: center;
+            article{
+                border:solid 1px black;
+                border-radius: 15px;
+                color: white;
+                background-color: #333333;
+                padding:7px 20px 7px 20px;
+            }
+        }
+        .menuHeader{
+            @include text('Rubik',normal,400,16px,19px,#333333);
+            font-family: 'Rubik', sans-serif;
+            display: flex;
+            align-items: center ;
+            nav{
+                ul{
+                    display: flex;
+                    justify-content: space-around;
+                    padding-left: 289px;
+                    li{
+                        padding:0 20px 0 0;
+                        a{
+                            color: #333333;
+                        }
+                    }
+                }
+            }
+        }
+        .language{
+            font-family: 'Rubik', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .card{
+                padding-left: 17px;
+                padding: 7px;
+            }
+            .card:hover{
+                border: solid 1px black;
+                border-radius: 10px;
+                background-color: #333333;
+                color: white;
+            }
+        }
+        
+    }
+}
+

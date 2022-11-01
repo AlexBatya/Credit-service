@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+.reclamaFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.reclamaFlex .creditoform {
+  max-width: 380px;
+  max-height: 362px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reclamaFlex .creditoform .advertisement {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  font-family: 'Rubik', sans-serif;
+  margin-bottom: 9px;
+}
+
+.reclamaFlex .creditoform .sizeCredit {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 50px;
+  color: #333333;
+  margin-bottom: 29px;
+}
+
+.reclamaFlex .creditoform .conditions {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50px 330px;
+      grid-template-columns: 50px 330px;
+  -ms-grid-rows: 25px 25px 25px;
+      grid-template-rows: 25px 25px 25px;
+  height: 96px;
+  gap: 10px;
+  margin-bottom: 41px;
+}
+
+.reclamaFlex .creditoform .conditions .num {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.13);
+          box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.13);
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reclamaFlex .creditoform .conditions .num1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 1/1/2/2;
+}
+
+.reclamaFlex .creditoform .conditions .num2 {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 2/1/3/2;
+}
+
+.reclamaFlex .creditoform .conditions .num3 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-area: 3/1/3/2;
+}
+
+.reclamaFlex .creditoform .conditions .text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 23px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.reclamaFlex .creditoform .btnCredit {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #333333;
+  border-radius: 25px;
+  padding: 15px 0px 16px;
+  background: #405554;
+  color: #ffffff;
+}
+
+.reclamaFlex .imgBaba {
+  margin-top: 4px;
+}
+
+.reclamaFlex .stokForm {
+  margin-top: 38px;
+  font-family: 'Rubik', sans-serif;
+  max-height: 230px;
+  max-width: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reclamaFlex .stokForm .promotionalRate {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 130%;
+  color: #333333;
+}
+
+.reclamaFlex .stokForm .promotionalRate span {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 130%;
+  color: #333333;
+  border: solid 1px #FFEC91;
+  background-color: #FFEC91;
+  border-radius: 25px;
+  padding: 5px 24px;
+  margin-left: 20px;
+}
+
+.reclamaFlex .stokForm .advertisementCredit {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+}
+
+.reclamaFlex .stokForm .dataGrid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 62px 62px 62px 62px;
+      grid-template-columns: 62px 62px 62px 62px;
+  -ms-grid-rows: 35px 18px;
+      grid-template-rows: 35px 18px;
+  gap: 7px 15px;
+}
+
+.reclamaFlex .stokForm .dataGrid .data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+  color: #333333;
+  border-radius: 25px;
+  background: #FFFFFF;
+}
+
+.reclamaFlex .stokForm .dataGrid .word {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2? &display=swap" rel="stylesheet">
+    <style>
+        .headerand{
+            background-image: url('../img/fon.png');
+        }
+    </style>
+    <title><%= title %> </title>
+</head>
+<body>
+    <article class = 'headerand'>
+        <%- include('const/header.ejs') %>  
+        <article class = 'reclamaFlex container'>
+            <section class = 'creditoform'>
+                <section class="advertisement">Онлайн без проверок!</section>
+                <section class="sizeCredit"><%= sizeCredit %> </section>
+                <section class="conditions">
+                        <div class = 'num num1'><%= num1 %> </div>
+                        <div class = 'text text1'><%= textCond1  %> </div>
+                        <div class = 'num num2'><%= num2 %> </div>
+                        <div class = 'text text2'><%= textCond2  %> </div>
+                        <div class = 'num num3'><%= num3 %> </div>
+                        <div class = 'text text3'><%= textCond3  %> </div>
+                </section>
+                <button class = 'btnCredit'>Оформить кредит</button>
+                
+            </section>
+            <section class = 'imgBaba'>
+                <img src="../img/baba.png" alt="">
+            </section>
+            <section class = 'stokForm'>
+                <section class = 'promotionalRate'>Акционная ставка<span><%= promotionalRate %>%</span> </section>
+                <section class = 'advertisementCredit'><%= advertisementCredit %> </section>
+                <section class = 'dataGrid'>
+                    <section class="data days"><%= timeday  %> </section>
+                    <section class="data hours"><%= timehours%> </section>
+                    <section class="data minuts"><%= timeminuts  %> </section>
+                    <section class="data seconds"><%= timeseconds%> </section>
+                    <section class="word days">Дней</section>
+                    <section class="word hours">Часов</section>
+                    <section class="word minuts">Минут</section>
+                    <section class="word rseconds">Секунд</section>
+                </section>
+            </section>
+        </article>
+    </article>
+
+    <main>
+
+    </main>
+
+    <%- include('const/footer.ejs') %> 
+</body>
+</html>
