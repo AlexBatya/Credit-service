@@ -149,9 +149,6 @@ main{
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                img{
-
-                }
             }
         }
         
@@ -173,6 +170,222 @@ main{
             left: -80px;
             top: 10px;
             background: #EDEDED;
+        }
+    }
+    .schemeOfWork{
+        margin-top: 100px;
+        padding-top: 56px;
+        padding-bottom: 92px;
+        font-family: 'Rubik', sans-serif;
+        // min-height: 250px;
+        background: #F0F0F0;
+        .schemeText{
+            @include text('Rubik',normal,500,25px,30px,#333333);
+            padding-bottom:30px ;
+        }
+        .arrangeCreditGrid{
+            display: grid;
+            grid-template-columns: 57px 195px 57px 195px 57px 195px 310px;
+            gap:27px;
+            .num{
+                background-color: #ECE4C0;
+                box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+                border-radius: 11px;
+                display: flex;
+                justify-content: center;
+                align-items: center
+            }
+            .arrangeText{
+                @include text('Rubik',normal,400,15px,18px,#333333);
+            }
+        }
+        button{
+            background: #405554;
+            border-radius: 25px;
+            color: #ffffff;
+        }
+    }
+    .whyOurGrid{
+        padding:  100px 0 100px 0;
+        display: grid;
+        grid-template-columns: 400px 380px 380px ;
+        grid-template-rows: 150px 150px;
+        gap: 25px 34px;
+        .cardFlex{
+            @include text('Rubik',normal,400,15px,18px,#333333);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 8px 0;
+            background: #E0E1C3;
+            border-radius: 25px;
+        }
+        .whyOurText{
+            @include text('Rubik',normal,500,25px,30px,#333333);
+        }
+        .card1{
+            grid-area: 1/2 /2/3 ;
+        }
+        .card2{
+            grid-area: 1/3 /2/4;
+        }
+        .card3{
+            grid-area: 2/ 2/3/3;
+        }
+        .card4{
+            grid-area: 2 /3 /3/4;
+        }
+    }
+    .colorBackRaffle{
+        background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);;
+        .Raffle{
+            display: flex;
+            justify-content: space-between;
+            padding: 90px 0 72px 0;
+            .RaffleText{
+                max-width: 335px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                h1{
+                    margin: 0 0 17px 0;
+                    @include text('Rubik',normal,500,60px,71px,#333333);
+                }
+                h3{
+                    margin: 0 0 21px 0;
+                    @include text('Rubik',normal,600,16px,19px,#333333);
+                }
+
+                h4{
+                    width: 259px;
+                    margin: 0 0 58px 0;
+                    @include text('Rubik',normal,400,15px,18px,#333333);
+                }
+                button{
+                    @include text('Rubik',normal,500,16px,19px,#333333);
+                    padding: 15px 0 15px 0;
+                    width: 260px;
+                    background: #405554;
+                    border-radius: 25px;
+                    color: white;
+                }
+            }
+        }
+    }
+    .ourClines{
+        position: relative;
+        h1{
+            @include text('Rubik',normal,500,25px,30px,#333333);
+        }
+
+        .clinesFlex{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 0 30px; 
+            .cardGrid{
+                max-height: 323px;
+                width: 358px;
+                display: grid;
+                grid-template-columns: 85px 249px;
+                grid-template-rows: 75px 190px;
+                gap: 15px 25px;
+                box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+                border-radius: 25px;
+                padding: 15px 11px;
+                .textCliner{
+                    @include text('Rubik',normal,400,15px,130%,#333333);
+                    grid-area: 2/1 /3/3;
+                    background-color: #D6E2D4;
+                    border-radius: 15px;
+                    padding: 29px 22px; 
+                }
+                .infoCliner{
+                    display: flex;
+                    flex-direction: column;
+                    margin-top: 17px;
+                    .name{
+                        @include text('Rubik',normal,600,16px,19px,#333333);
+                        margin-bottom: 2px;
+                    }
+                    .vilige{
+                        @include text('Rubik',normal,600,12px,14px,#333333);
+                        margin-bottom: 8px;
+                    }
+                    .prophetion{
+                        @include text('Rubik',normal,300,13px,15px,#333333);
+                    }
+                }
+                p{
+                    margin: 0;
+                }
+
+            }
+        }
+        .strelkaclient{
+            position: absolute;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+            background: #FFFFFF;
+            border-radius: 50%;
+            border:1px solid #DEDEDE; 
+        }
+        .strelkaclientLeft{
+            top: 200px;
+            left: -80px; 
+        }
+        .strelkaclientRight{
+            top: 200px;
+            right: -80px;
+        }
+    }
+    .sliderButton{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div{
+            border: 1px solid #CAD2E1;
+            border-radius: 50%;
+            width: 22px;
+            height: 22px;
+            background-color: #CAD2E1;
+            margin: 35px 10px;
+            
+        }
+        .enterOval{
+            border: 5px solid #F2DEA3;
+            width: 14px;
+            height: 14px;
+            background-color: white;
+        }
+        div:hover{
+            border: 5px solid #F2DEA3;
+            width: 14px;
+            height: 14px;
+            background-color: white;
+        }
+    }
+    .howMuchUsColor{
+        background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
+        .howMuchUsFlex{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 47px 100px 37px 100px;
+            .number{
+                h1{
+                    margin: 0;
+                    @include text('Rubik',normal,500,40px,47px,#333333);
+                }    
+                h2{
+                    margin: 0;
+                    @include text('Rubik',normal,300,14px,130%,#333333);
+                }
+            }
         }
     }
 }
