@@ -16,7 +16,7 @@ footer{
             grid-template-columns: 113px 300px 232px 178px 197px ;
             grid-template-rows: repeat(5,20%);
             height:175px ;
-            padding-bottom: 163px;
+            padding-bottom: 63px;
             .black{
                 @include text('Rubik',normal,500,17px,20px,#000);
                 font-family: 'Rubik', sans-serif;

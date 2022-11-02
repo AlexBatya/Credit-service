@@ -227,4 +227,79 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+main {
+  font-family: 'Rubik', sans-serif;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+main .partners {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+main .ourPartnersFlex {
+  position: relative;
+}
+
+main .ourPartnersFlex .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  gap: 30px;
+}
+
+main .ourPartnersFlex .logo .partnersLogo {
+  width: 100%;
+  min-height: 70px;
+  background-color: #ECE4C0;
+  border-radius: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .ourPartnersFlex .strelka {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+main .ourPartnersFlex .strelkaRight {
+  top: 10px;
+  right: -80px;
+  background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
+}
+
+main .ourPartnersFlex .strelkaLeft {
+  left: -80px;
+  top: 10px;
+  background: #EDEDED;
+}
 /*# sourceMappingURL=main.css.map */

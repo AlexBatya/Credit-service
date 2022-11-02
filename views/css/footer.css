@@ -15,7 +15,7 @@ footer article .infoGrid {
   -ms-grid-rows: (20%)[5];
       grid-template-rows: repeat(5, 20%);
   height: 175px;
-  padding-bottom: 163px;
+  padding-bottom: 63px;
 }
 
 footer article .infoGrid .black {
