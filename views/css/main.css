@@ -244,65 +244,6 @@ main .partners {
   margin-bottom: 30px;
 }
 
-main .ourPartnersFlex {
-  position: relative;
-}
-
-main .ourPartnersFlex .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  gap: 30px;
-}
-
-main .ourPartnersFlex .logo .partnersLogo {
-  width: 100%;
-  min-height: 70px;
-  background-color: #ECE4C0;
-  border-radius: 35px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-main .ourPartnersFlex .strelka {
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 50%;
-}
-
-main .ourPartnersFlex .strelkaRight {
-  top: 10px;
-  right: -80px;
-  background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
-}
-
-main .ourPartnersFlex .strelkaLeft {
-  left: -80px;
-  top: 10px;
-  background: #EDEDED;
-}
-
 main .schemeOfWork {
   margin-top: 100px;
   padding-top: 56px;
@@ -709,5 +650,124 @@ main .howMuchUsColor .howMuchUsFlex .number h2 {
   font-size: 14px;
   line-height: 130%;
   color: #333333;
+}
+
+main .textAllConditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .textAllConditions .creditConditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 20px 20px 20px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+  margin: 100px 0 100px 0;
+  gap: 36px;
+}
+
+main .textAllConditions .creditConditions .baba2 {
+  padding: 43px 137px 0 125px;
+  background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
+  border-radius: 25px;
+}
+
+main .textAllConditions .creditConditions .texesCreditConditions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .textAllConditions .creditConditions .texesCreditConditions h1 {
+  max-width: 288px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #333333;
+  margin: 0 0 30px 0;
+}
+
+main .textAllConditions .creditConditions .texesCreditConditions .galkaText {
+  max-width: 288px;
+  margin: 0 0 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 0 10px;
+}
+
+main .textAllConditions .creditConditions .texesCreditConditions .galkaText p {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  margin: 0;
+}
+
+main .textAllConditions .creditConditions .texesCreditConditions button {
+  background: #405554;
+  border-radius: 25px;
+  color: white;
+  height: 50px;
+}
+
+main .quastion_answer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 15px 15px;
+}
+
+main .quastion_answer .quation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 16px;
+  padding: 14px 28px 14px 28px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+}
+
+main .quastion_answer .quation p {
+  margin: 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #333333;
+  min-width: 1103px;
 }
 /*# sourceMappingURL=main.css.map */

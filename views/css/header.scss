@@ -67,41 +67,31 @@ header{
             .menuCard5{
                 grid-area: 1/7/2/8;
             }
-            .language:hover{
-                background-color: #333333;
-                border-radius: 10px;
-                a{
-                    color:white;
-                }
-            }
-            .language{
-                @include text('Rubik',normal,400,16px,19px,#ffffff);
-            }
+            
+            
             .biglanguage{
                 display: flex;
                 grid-area: 1/9/2/10;
                 gap:3px;
-                .ru{
+                .language{
+                    @include text('Rubik',normal,400,16px,19px,#000);
                     width: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0;
+                }
+                .language:hover{
                     background-color: #333333;
                     border-radius: 10px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 0;
-                    a{
-                        color: white;
-                    }
+                    color:white;
                 }
-                
-                .en{
-                    width: 40px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 0;
+                .languageAdd{
+                    background-color: #333333;
+                    border-radius: 10px;
+                    color:white;
                 }
-                }
+            }
         }
     
 }

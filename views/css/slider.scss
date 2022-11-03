@@ -1,0 +1,95 @@
+.slider{
+    z-index: 0;
+    section{
+        img{
+            max-width: 150px;
+            max-height: 150px;
+        }
+    }
+    .slider_item{
+        min-height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 15px 0 15px ;
+        text-align: center;
+        border: 1px solid #ECE4C0;
+        border-radius: 35px;
+        background-color: #ECE4C0;
+        transition: all 0.4s ease 0s;
+        opacity: 1;
+    }
+    position: relative;
+    padding: 0 60px;
+    .slick-list{
+        overflow: hidden;
+        .slick-track{
+            display: flex;
+        }   
+    }
+    .slick-arrow{
+        position: absolute;
+        top: 50%;
+        margin-top: -50px;
+        z-index: 10;
+        font-size: 0;
+        width: 30px;
+        height: 60px;
+        border: none;
+        cursor: pointer;
+    }
+    .slick-prev{
+        width: 50px;
+        height: 50px;
+        left: -20px;
+        top: 60px;
+        transition: 0.4s;
+        background: url('../img/left.svg') #EDEDED 0 /100% no-repeat;
+        background-size: 25px 25px; 
+        background-position: center;
+        position: absolute;
+        border-radius: 50%;
+    }
+    .slick-next{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border-radius: 50%;
+        right: -20px;
+        top: 60px;
+        transition: 0.4s;
+        background: url('../img/right.svg') #F2DEA3 0 /100% no-repeat;
+        background-size: 25px 25px; 
+        background-position: center;
+    }
+    .slick-dots{
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+        max-width: 100%;
+        padding: 0;
+        li{
+            padding: 10px;
+            list-style: none;
+        }
+        .slick-active{
+            button{
+                font-size: 0;
+                border: solid 1px #467996;
+                width: 10px;
+                height: 10px;
+                border-radius: 100%;
+                background-color: #fff;
+            }    
+        }
+        
+        button{
+            font-size: 0;
+            border: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            background-color: #6D9FBB;
+        }
+    }
+}

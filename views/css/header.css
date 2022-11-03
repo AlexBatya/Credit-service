@@ -108,24 +108,6 @@ header .menuGrid .menuCard5 {
   grid-area: 1/7/2/8;
 }
 
-header .menuGrid .language:hover {
-  background-color: #333333;
-  border-radius: 10px;
-}
-
-header .menuGrid .language:hover a {
-  color: white;
-}
-
-header .menuGrid .language {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #ffffff;
-}
-
 header .menuGrid .biglanguage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -138,10 +120,14 @@ header .menuGrid .biglanguage {
   gap: 3px;
 }
 
-header .menuGrid .biglanguage .ru {
+header .menuGrid .biglanguage .language {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000;
   width: 40px;
-  background-color: #333333;
-  border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -154,21 +140,15 @@ header .menuGrid .biglanguage .ru {
   gap: 0;
 }
 
-header .menuGrid .biglanguage .ru a {
+header .menuGrid .biglanguage .language:hover {
+  background-color: #333333;
+  border-radius: 10px;
   color: white;
 }
 
-header .menuGrid .biglanguage .en {
-  width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0;
+header .menuGrid .biglanguage .languageAdd {
+  background-color: #333333;
+  border-radius: 10px;
+  color: white;
 }
 /*# sourceMappingURL=header.css.map */

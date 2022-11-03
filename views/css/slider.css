@@ -1,0 +1,110 @@
+.slider {
+  z-index: 0;
+  position: relative;
+  padding: 0 60px;
+}
+
+.slider section img {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.slider .slider_item {
+  min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 15px 0 15px;
+  text-align: center;
+  border: 1px solid #ECE4C0;
+  border-radius: 35px;
+  background-color: #ECE4C0;
+  -webkit-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  opacity: 1;
+}
+
+.slider .slick-list {
+  overflow: hidden;
+}
+
+.slider .slick-list .slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  z-index: 10;
+  font-size: 0;
+  width: 30px;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.slider .slick-prev {
+  width: 50px;
+  height: 50px;
+  left: -20px;
+  top: 60px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: url("../img/left.svg") #EDEDED 0/100% no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.slider .slick-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  border-radius: 50%;
+  right: -20px;
+  top: 60px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background: url("../img/right.svg") #F2DEA3 0/100% no-repeat;
+  background-size: 25px 25px;
+  background-position: center;
+}
+
+.slider .slick-dots {
+  max-width: 100%;
+  padding: 0;
+}
+
+.slider .slick-dots li {
+  padding: 10px;
+  list-style: none;
+}
+
+.slider .slick-dots .slick-active button {
+  font-size: 0;
+  border: solid 1px #467996;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #fff;
+}
+
+.slider .slick-dots button {
+  font-size: 0;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #6D9FBB;
+}
+/*# sourceMappingURL=slider.css.map */

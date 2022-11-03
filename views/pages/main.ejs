@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2? &display=swap" rel="stylesheet">
@@ -56,19 +57,14 @@
     </article>
 
     <main>
+
+            <!-- Тута слайдеры -->
+            
+
         <article class = 'container partners'>Наши партнёры</article>
-        <article class="ourPartnersFlex container">
-            <section class="strelka strelkaLeft"><img src="../img/left.svg" alt=""></section>
-            <section class="logo">
-                <section class="partnersLogo "><img src="../img/1.png" alt=""></section>
-                <section class="partnersLogo "><img src="../img/2.png" alt=""></section>
-                <section class="partnersLogo "><img src="../img/3.png" alt=""></section>
-                <section class="partnersLogo "><img src="../img/4.png" alt=""></section>
-                <section class="partnersLogo "><img src="../img/5.png" alt=""></section>
-                <section class="partnersLogo "><img src="../img/6.png" alt=""></section>
-            </section>
-            <section class="strelka strelkaRight"><img src="../img/right.svg" alt=""></section>
-        </article>
+
+        <%- include('./const/slider.ejs') %> 
+
         <article class = 'schemeOfWork '>
             <section class = 'schemeText container'>Схема работы</section>
             <section class = 'arrangeCreditGrid container'>
@@ -168,8 +164,83 @@
                 <section class = 'imgHowMuchUs'><img src="../img/peoples.png" alt=""></section>
             </article>
         </article>
+        <article class = 'textAllConditions container'>
+            <article class = 'creditConditions '>
+                <section class ='baba2'>
+                    <img src="../img/baba2.png" alt="">
+                </section>
+                <section class = 'texesCreditConditions'>
+                    <h1>Условия кредитования</h1>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Сумма кредита или кредитного лимита от 500 до 500 000 грн.</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Без залога и поручителей</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Все регионы Украины кроме АРК</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Срок от 61 дня до 5 лет</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Ставка от 0,01%</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Возраст от 18 до 79 лет</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Кредит на любые цели</p>
+                    </section>
+                    <section class="galkaText">
+                        <img src="../img/galka.svg" alt="">
+                        <p>Максимальная годовая процентная ставка, включающая ссудный процент, а также все остальные комиссии и расходы за год - не более 29,99%</p>
+                    </section>
+                    <button>Кредитный калькулятор</button>
+                </section>
+            </article>
+        </article>
+        <article class = 'quastion_answer container'>
+            <h1>Вопросы- ответы </h1>
+            <section class="quation">
+                <p>Вероятность получения кредитной карты или кредита?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+            <section class="quation">
+                <p>Как быстро я получу кредитную карту или кредит?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+            <section class="quation">
+                <p>Комиссия за оформление кредитной карты или кредита?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+            <section class="quation">
+                <p>На какие цели я могу использовать кредитные средства?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+            <section class="quation">
+                <p>Какова окончательная процентная ставка по кредиту?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+            <section class="quation">
+                <p>Как минимизировать стоимость обслуживания кредита?</p>
+                <img src="../img/strelka_down.svg" alt="">
+            </section>
+        </article>
     </main>
 
     <%- include('const/footer.ejs') %> 
+    <script src="../js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="../js/jquery.maskedinput.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/sliderPartners.js"></script>
 </body>
 </html>

@@ -53,12 +53,18 @@ footer{
                 @include text('Rubik',normal,300,16px,19px,#ffffff);
                 font-family: 'Rubik', sans-serif;
                 display: flex;
-                .card{
+                gap:3px;
+                .language{
                     color: white;
                     padding: 8px;
                 }
-                .card:hover{
-                    background-color: white;
+                .language:hover{
+                    background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
+                    border-radius: 10%;
+                    color: black;
+                }
+                .languageFootAdd{
+                    background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
                     border-radius: 10%;
                     color: black;
                 }

@@ -133,45 +133,7 @@ main{
         @include text('Rubik',normal,500,25px,30px,#333333);
         margin-bottom: 30px;
     }
-    .ourPartnersFlex{
-        position: relative;
-        .logo{
-            display: flex; 
-            justify-content: space-between;
-            text-align: center;
-            // position: relative;
-            gap:30px;
-            .partnersLogo{
-                width: 100%;
-                min-height: 70px;
-                background-color: #ECE4C0;
-                border-radius: 35px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-        
-        .strelka{
-            position: absolute;
-            height: 50px;
-            width: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border-radius: 50%;
-        }
-        .strelkaRight{
-            top:10px;
-            right: -80px;
-            background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
-        }
-        .strelkaLeft{
-            left: -80px;
-            top: 10px;
-            background: #EDEDED;
-        }
-    }
+    
     .schemeOfWork{
         margin-top: 100px;
         padding-top: 56px;
@@ -385,6 +347,70 @@ main{
                     margin: 0;
                     @include text('Rubik',normal,300,14px,130%,#333333);
                 }
+            }
+        }
+    }
+    .textAllConditions{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .creditConditions{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 20px 20px 20px;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+            border-radius: 25px;
+            margin:100px 0 100px 0; 
+            gap: 36px;
+            .baba2{
+                padding: 43px 137px 0 125px;
+                background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);;
+                border-radius: 25px;
+            }
+            .texesCreditConditions{
+                display: flex;
+                flex-direction: column;
+                h1{
+                    max-width: 288px;
+                    @include text('Rubik',normal,500,25px,30px,#333333);
+                    margin: 0 0 30px 0;
+                }
+                .galkaText{
+                    max-width: 288px;
+                    margin: 0 0 30px 0;
+                    display: flex;
+                    align-items: start;
+                    gap: 0 10px;
+                    p{
+                        @include text('Rubik',normal,400,15px,18px,#333333);
+                        margin: 0;
+                    }
+                    
+                }
+                button{
+                    background: #405554;
+                    border-radius: 25px;
+                    color: white;
+                    height: 50px;
+                }
+            }
+        }
+    }
+    .quastion_answer{
+        display: flex;
+        flex-direction: column;
+        gap:15px 15px;
+        .quation{
+            display: flex;
+            gap: 0 16px;
+            padding: 14px 28px 14px 28px ;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+            border-radius: 25px;
+            p{
+                margin: 0;
+                @include text('Rubik',normal,400,15px,18px,#333333);
+                min-width: 1103px;
             }
         }
     }
