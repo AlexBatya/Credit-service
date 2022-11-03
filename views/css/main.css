@@ -451,10 +451,6 @@ main .colorBackRaffle .Raffle .RaffleText button {
   color: white;
 }
 
-main .ourClines {
-  position: relative;
-}
-
 main .ourClines h1 {
   font-family: "Rubik";
   font-style: normal;
@@ -462,94 +458,6 @@ main .ourClines h1 {
   font-size: 25px;
   line-height: 30px;
   color: #333333;
-}
-
-main .ourClines .clinesFlex {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 0 30px;
-}
-
-main .ourClines .clinesFlex .cardGrid {
-  max-height: 323px;
-  width: 358px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 85px 249px;
-      grid-template-columns: 85px 249px;
-  -ms-grid-rows: 75px 190px;
-      grid-template-rows: 75px 190px;
-  gap: 15px 25px;
-  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
-  border-radius: 25px;
-  padding: 15px 11px;
-}
-
-main .ourClines .clinesFlex .cardGrid .textCliner {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 130%;
-  color: #333333;
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: 2/1 /3/3;
-  background-color: #D6E2D4;
-  border-radius: 15px;
-  padding: 29px 22px;
-}
-
-main .ourClines .clinesFlex .cardGrid .infoCliner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin-top: 17px;
-}
-
-main .ourClines .clinesFlex .cardGrid .infoCliner .name {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #333333;
-  margin-bottom: 2px;
-}
-
-main .ourClines .clinesFlex .cardGrid .infoCliner .vilige {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 14px;
-  color: #333333;
-  margin-bottom: 8px;
-}
-
-main .ourClines .clinesFlex .cardGrid .infoCliner .prophetion {
-  font-family: "Rubik";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 13px;
-  line-height: 15px;
-  color: #333333;
-}
-
-main .ourClines .clinesFlex .cardGrid p {
-  margin: 0;
 }
 
 main .ourClines .strelkaclient {
@@ -758,6 +666,9 @@ main .quastion_answer .quation {
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
   border-radius: 25px;
+  height: 20px;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 main .quastion_answer .quation p {
@@ -769,5 +680,38 @@ main .quastion_answer .quation p {
   line-height: 18px;
   color: #333333;
   min-width: 1103px;
+}
+
+main .quastion_answer .quation img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  width: 13px;
+  height: 8px;
+}
+
+main .quastion_answer .quation .opacityText {
+  opacity: 0;
+}
+
+main .quastion_answer .quation:hover {
+  background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
+  height: 157px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+
+main .quastion_answer .quation:hover img {
+  margin-top: 25px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 24px;
+  height: 12px;
+}
+
+main .quastion_answer .quation:hover .opacityText {
+  opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
