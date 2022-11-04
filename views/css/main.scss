@@ -356,43 +356,61 @@ main{
         display: flex;
         flex-direction: column;
         gap:15px 15px;
-        .quation{
-            display: flex;
-            gap: 0 16px;
-            padding: 14px 28px 14px 28px ;
-            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
-            border-radius: 25px;
-            height: 20px;
-            transition-duration: 0.5s;
-            p{
-                margin: 0;
-                @include text('Rubik',normal,400,15px,18px,#333333);
-                min-width: 1103px;
-            }
-            img{
-                transition: 0.5s;
-                transform: rotate(0);
-                width: 13px;
-                height: 8px;
-            }
-            .opacityText{
-                opacity: 0;
+        .quationTexts{
+            transition-duration: 0.4s;
+            background-color: white;
+            .quation{
+                display: grid;
+                grid-template-columns: 1103px 13px;
+                grid-template-rows: 18px;
+                gap: 15px 16px;
+                padding: 14px 28px 14px 28px ;
+                box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+                border-radius: 25px;
+                height: 20px;
+                transition-duration: 0.5s;
+                p{
+                    transition-duration: 0.4s;
+                    margin: 0;
+                    @include text('Rubik',normal,400,15px,18px,#333333);
+                }
+                img{
+                    transition: 0.5s;
+                    transform: rotate(0);
+                    width: 13px;
+                    height: 8px;
+                }
+                .opacityText{
+                    width: 553px;
+                    opacity: 0;
+                    font-weight: 400;
+                }
+                
             }
         }
-        .quation:hover{
-            // background:#F2DEA3; 
-            background:$colorAngri; 
-            height: 157px;
-            align-items: start;
-            
-            img{
-                margin-top: 25px;
-                transform: rotate(180deg);
-                width: 24px;
-                height: 12px;
-            }
-            .opacityText{
-                opacity: 1;
+        .quationTexts:hover{
+            padding: 10px;
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+            border-radius: 25px;
+            .quation{
+                background:$colorAngri; 
+                height: 157px;
+                align-items: start;
+                padding: 14px 17px 14px 17px ;
+                p{
+                    font-weight: 600;
+                    margin-top: 24px;
+                } 
+                img{
+                    margin-top: 25px;
+                    transform: rotate(180deg);
+                    width: 24px;
+                    height: 12px;
+                }
+                .opacityText{
+                    font-weight: 400;
+                    opacity: 1;
+                }
             }
         }
     }

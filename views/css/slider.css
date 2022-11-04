@@ -226,7 +226,10 @@
   top: 100px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background: url("../img/left.svg") #EDEDED 0/100% no-repeat;
+  background: url("../img/left.svg") 0 0/100% no-repeat;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border: 1px solid #DEDEDE;
   background-size: 25px 25px;
   background-position: center;
   position: absolute;
@@ -242,7 +245,10 @@
   top: 100px;
   -webkit-transition: 0.4s;
   transition: 0.4s;
-  background: url("../img/right.svg") #F2DEA3 0/100% no-repeat;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border: 1px solid #DEDEDE;
+  background: url("../img/right.svg") 0 0/100% no-repeat;
   background-size: 25px 25px;
   background-position: center;
 }

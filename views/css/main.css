@@ -657,11 +657,20 @@ main .quastion_answer {
   gap: 15px 15px;
 }
 
-main .quastion_answer .quation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0 16px;
+main .quastion_answer .quationTexts {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  background-color: white;
+}
+
+main .quastion_answer .quationTexts .quation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1103px 13px;
+      grid-template-columns: 1103px 13px;
+  -ms-grid-rows: 18px;
+      grid-template-rows: 18px;
+  gap: 15px 16px;
   padding: 14px 28px 14px 28px;
   -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
@@ -671,7 +680,9 @@ main .quastion_answer .quation {
           transition-duration: 0.5s;
 }
 
-main .quastion_answer .quation p {
+main .quastion_answer .quationTexts .quation p {
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
   margin: 0;
   font-family: "Rubik";
   font-style: normal;
@@ -679,10 +690,9 @@ main .quastion_answer .quation p {
   font-size: 15px;
   line-height: 18px;
   color: #333333;
-  min-width: 1103px;
 }
 
-main .quastion_answer .quation img {
+main .quastion_answer .quationTexts .quation img {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   -webkit-transform: rotate(0);
@@ -691,19 +701,34 @@ main .quastion_answer .quation img {
   height: 8px;
 }
 
-main .quastion_answer .quation .opacityText {
+main .quastion_answer .quationTexts .quation .opacityText {
+  width: 553px;
   opacity: 0;
+  font-weight: 400;
 }
 
-main .quastion_answer .quation:hover {
+main .quastion_answer .quationTexts:hover {
+  padding: 10px;
+  -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+  border-radius: 25px;
+}
+
+main .quastion_answer .quationTexts:hover .quation {
   background: linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
   height: 157px;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
+  padding: 14px 17px 14px 17px;
 }
 
-main .quastion_answer .quation:hover img {
+main .quastion_answer .quationTexts:hover .quation p {
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+main .quastion_answer .quationTexts:hover .quation img {
   margin-top: 25px;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -711,7 +736,8 @@ main .quastion_answer .quation:hover img {
   height: 12px;
 }
 
-main .quastion_answer .quation:hover .opacityText {
+main .quastion_answer .quationTexts:hover .quation .opacityText {
+  font-weight: 400;
   opacity: 1;
 }
 /*# sourceMappingURL=main.css.map */
