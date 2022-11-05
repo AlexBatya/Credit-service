@@ -740,4 +740,16 @@ main .quastion_answer .quationTexts:hover .quation .opacityText {
   font-weight: 400;
   opacity: 1;
 }
+
+@media (max-width: 360px) {
+  .reclamaFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .reclamaFlex .imgBaba {
+    display: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */

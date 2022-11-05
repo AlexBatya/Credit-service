@@ -417,3 +417,12 @@ main{
     
 }
 
+@media (max-width: 360px){
+    .reclamaFlex{
+        flex-direction: column;
+        .imgBaba{
+            display: none;
+        }
+    }
+
+}
