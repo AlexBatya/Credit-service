@@ -15,6 +15,21 @@
     border: $border;
     border-radius: $borderRad;   
 }
+$maxWidth: 1200px;
+@function maxWightper($maxWidth,$width){
+    @return (100% * $width)/$maxWidth
+}
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
 $colorAngri:linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
 .reclamaFlex{
     display: flex;
@@ -37,11 +52,12 @@ $colorAngri:linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
             
         }
         .conditions{
+            max-width: 380px;
             display: grid;
-            grid-template-columns: 50px 330px;
+            grid-template-columns: maxWightper(380px,50px) maxWightper(380px,330px);
             grid-template-rows: 25px 25px 25px;
-            height: 96px;
-            gap: 10px;
+            max-height: 96px;
+            gap: 10px maxWightper(380px,10px);
             margin-bottom: 41px;
                 .num{
                     @include text('Rubik',normal,500,13px,15px,#333333);
@@ -68,10 +84,9 @@ $colorAngri:linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
                 }
         }
         .btnCredit{
-
             @include text('Rubik',normal,500,16px,19px,#333333);
             border-radius: 25px;
-            padding: 15px 0px 16px;
+            padding: 15px 0px 16px 0;
             background: #405554;
             color: #ffffff;
         }
@@ -95,7 +110,7 @@ $colorAngri:linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
                 background-color: #FFEC91;
                 border-radius: 25px;
                 padding: 5px 24px;
-                margin-left: 20px;
+                margin-left: maxWightper(310px,20px);
 
             }
         }
@@ -103,10 +118,11 @@ $colorAngri:linear-gradient(87.36deg, #CBE3E5 -1.98%, #F2DEA3 102.92%);
             @include text('Rubik',normal,400,15px,18px,#333333);
         }
         .dataGrid{
+            max-width: 310px;
             display: grid;
-            grid-template-columns: 62px 62px 62px 62px;
+            grid-template-columns: repeat(4,maxWightper(310px,62px));
             grid-template-rows: 35px 18px;
-            gap: 7px 15px;
+            gap: 7px maxWightper(310px,15px);
             .data{
                 display: flex;
                 justify-content: center;
@@ -420,8 +436,69 @@ main{
 @media (max-width: 360px){
     .reclamaFlex{
         flex-direction: column;
+        .creditoform{
+            .advertisement{
+                @include text('Rubik',normal,400,16px,19px,#333333);
+            }
+            .sizeCredit{
+                @include text('Rubik',normal,600,39px,130%,#333333);
+            }
+            .conditions{
+                .num{
+                    @include text('Rubik',normal,500,13px,15px,#333333);
+                }
+                .text{
+                    @include text('Rubik',normal,400,15px,18px,#333333);
+                }
+            }
+            .btnCredit{
+                max-width: 310px;
+                max-height: 50px;
+            }
+        }
         .imgBaba{
             display: none;
+        }
+        .stokForm{
+            
+            .promotionalRate{
+                display: flex;
+                justify-content: space-around;
+                @include text('Rubik',normal,600,20px,130%,#333333);
+                margin-bottom: 12px;
+            }
+            .advertisementCredit{
+                @include text('Rubik',normal,400,15px,18px,#333333);
+                margin-bottom: 20px;
+            }
+            .dataGrid{
+                margin-bottom: 55px;
+            }
+        }
+    }
+    main{
+        .partners{
+            text-align: center;
+        }
+        .schemeOfWork{
+            .schemeText{
+                text-align: center;
+            }
+            .arrangeCreditGrid{
+                grid-template-columns:maxWightper(380px,37px) maxWightper(380px,195px);
+                grid-template-rows: 36px 36px 36px 50px;
+                gap: 25px maxWightper(380px,27px);
+                justify-content: center;
+                .num{
+                    @include text('Rubik',normal,300,13px,15px,#333333);
+                    background-color: #D9E6DF;
+                    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+                    border-radius: 15px;
+                }
+                button{
+                    grid-area: 4/ 1/5/3;
+                }
+            }
         }
     }
 

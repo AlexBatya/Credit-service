@@ -109,6 +109,14 @@
   background-color: #6D9FBB;
 }
 
+@media (max-width: 360px) {
+  .slider .slider_item {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 26.38889%;
+  }
+}
+
 .slider2 {
   z-index: 0;
   width: 1220px;

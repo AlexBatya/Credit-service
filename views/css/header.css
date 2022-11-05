@@ -2,8 +2,8 @@
 .container {
   max-width: 1200px;
   margin: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 1.25%;
+  padding-right: 1.25%;
 }
 
 a {
@@ -20,9 +20,9 @@ header .menuGrid {
   padding-bottom: 76px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 113px 216px 78px 109px 59px 139px 178px 50px 80px;
-      grid-template-columns: 113px 216px 78px 109px 59px 139px 178px 50px 80px;
-  gap: 20px;
+  -ms-grid-columns: 9.41667% 18% 6.5% 9.08333% 4.91667% 11.58333% 16.5% 4.16667% 6.66667%;
+      grid-template-columns: 9.41667% 18% 6.5% 9.08333% 4.91667% 11.58333% 16.5% 4.16667% 6.66667%;
+  gap: 1.66667%;
 }
 
 header .menuGrid .credit24 {
@@ -43,7 +43,7 @@ header .menuGrid .credit24 {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 15px;
-  padding: 8px 20px;
+  padding: 8px 0;
 }
 
 header .menuGrid .credit24 a {
@@ -158,8 +158,9 @@ header .menuGrid .menuforVsp {
 
 @media (max-width: 360px) {
   .container {
+    max-width: 360px;
     margin: 0;
-    padding: 5px;
+    padding: 1.38889%;
   }
   header .menuGrid {
     display: -webkit-box;
