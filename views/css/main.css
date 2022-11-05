@@ -43,14 +43,15 @@
 }
 
 .reclamaFlex .creditoform .conditions {
+  max-width: 380px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50px 330px;
-      grid-template-columns: 50px 330px;
+  -ms-grid-columns: 13.15789% 86.84211%;
+      grid-template-columns: 13.15789% 86.84211%;
   -ms-grid-rows: 25px 25px 25px;
       grid-template-rows: 25px 25px 25px;
-  height: 96px;
-  gap: 10px;
+  max-height: 96px;
+  gap: 10px 2.63158%;
   margin-bottom: 41px;
 }
 
@@ -122,7 +123,7 @@
   line-height: 19px;
   color: #333333;
   border-radius: 25px;
-  padding: 15px 0px 16px;
+  padding: 15px 0px 16px 0;
   background: #405554;
   color: #ffffff;
 }
@@ -168,7 +169,7 @@
   background-color: #FFEC91;
   border-radius: 25px;
   padding: 5px 24px;
-  margin-left: 20px;
+  margin-left: 6.45161%;
 }
 
 .reclamaFlex .stokForm .advertisementCredit {
@@ -181,13 +182,14 @@
 }
 
 .reclamaFlex .stokForm .dataGrid {
+  max-width: 310px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 62px 62px 62px 62px;
-      grid-template-columns: 62px 62px 62px 62px;
+  -ms-grid-columns: (20%)[4];
+      grid-template-columns: repeat(4, 20%);
   -ms-grid-rows: 35px 18px;
       grid-template-rows: 35px 18px;
-  gap: 7px 15px;
+  gap: 7px 4.83871%;
 }
 
 .reclamaFlex .stokForm .dataGrid .data {
@@ -748,8 +750,105 @@ main .quastion_answer .quationTexts:hover .quation .opacityText {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .reclamaFlex .creditoform .advertisement {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #333333;
+  }
+  .reclamaFlex .creditoform .sizeCredit {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 39px;
+    line-height: 130%;
+    color: #333333;
+  }
+  .reclamaFlex .creditoform .conditions .num {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+  }
+  .reclamaFlex .creditoform .conditions .text {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+  }
+  .reclamaFlex .creditoform .btnCredit {
+    max-width: 310px;
+    max-height: 50px;
+  }
   .reclamaFlex .imgBaba {
     display: none;
+  }
+  .reclamaFlex .stokForm .promotionalRate {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    color: #333333;
+    margin-bottom: 12px;
+  }
+  .reclamaFlex .stokForm .advertisementCredit {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  .reclamaFlex .stokForm .dataGrid {
+    margin-bottom: 55px;
+  }
+  main .partners {
+    text-align: center;
+  }
+  main .schemeOfWork .schemeText {
+    text-align: center;
+  }
+  main .schemeOfWork .arrangeCreditGrid {
+    -ms-grid-columns: 9.73684% 51.31579%;
+        grid-template-columns: 9.73684% 51.31579%;
+    -ms-grid-rows: 36px 36px 36px 50px;
+        grid-template-rows: 36px 36px 36px 50px;
+    gap: 25px 7.10526%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  main .schemeOfWork .arrangeCreditGrid .num {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #333333;
+    background-color: #D9E6DF;
+    -webkit-box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+  }
+  main .schemeOfWork .arrangeCreditGrid button {
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: 4/ 1/5/3;
   }
 }
 /*# sourceMappingURL=main.css.map */
